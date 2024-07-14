@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*-------RESET--------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 186, 223);
+    margin: 0;
+    padding-top: 145px;
+}
+
+/* Estilos para el header y su contenedor */
+header {
+    width: 100%;
+    background-color: rgb(241, 139, 255);
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.titulo-roma {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-roma h1 {
+    font-size: 2.5rem;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    position: fixed;
+    top: 100px; /* Ajusta este valor según la altura de tu header */
+    left: 0;
+    width: 100%;
+    background-color: rgb(232, 56, 255);
+    z-index: 900;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar {
+    order: 2;
+    width: 100%;
+    background-color: rgb(241, 139, 255);
+    position: fixed;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 139, 255);
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+/* Estilos para la sección de Productos Destacados */
+main {
+    width: 100%; /* Asegura que main ocupe el ancho completo */
+    box-sizing: border-box; /* Importante para incluir el padding en el ancho total */
+}
+
+
+
+main .destacados {
+    
+    text-align: center;
+    background-color: rgb(255, 25, 198);
+}
+
+main .destacados h2 {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+main .destacados b {
+    display: block;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: rgb(0, 102, 204);
+}
+
+main .destacados a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 20px;
+    background-color: rgb(255, 204, 0);
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+main .destacados a:hover {
+    background-color: #e6b800;
+}
+
+#carouselExampleIndicators {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destacados #carouselExampleIndicators .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para la sección de productos */
+.nuestros-productos {
+    background-color: rgb(255, 186, 223);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    background-color: rgb(255, 186, 223);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.hero article {
+    border: 0.2rem solid black;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.hero article p {
+    margin-bottom: 1rem;
+}
+
+.hero article .buttons {
+    display: flex;
+    justify-content: space-around; /* Alinea los botones con espacio entre ellos */
+    margin-top: 1rem;
+}
+
+/* Estilos personalizados para los botones */
+.hero article .buttons a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(199, 78, 255);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    border: none; /* Eliminar borde */
+    cursor: pointer;
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+.hero article .buttons a:hover {
+    background-color: rgb(247, 73, 195);
+    color: white;
+    transform: translateY(-2px); /* Efecto de levantamiento al pasar el mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.hero article .buttons a + a {
+    margin-left: 1rem; /* Espacio entre botones */
+}
+
+
+.hero article img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero article:hover img {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Estilos para la sección de información de envíos */
+.info-envios {
+    padding: 2rem;
+    background-color: rgb(53, 209, 118);
+    text-align: center;
+}
+
+.info-envios h2 {
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-envios p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.info-envios .centrar-enlace {
+    margin-bottom: 2rem;
+}
+
+.info-envios .centrar-enlace a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(199, 78, 255);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.info-envios .centrar-enlace a:hover {
+    background-color: rgb(247, 73, 195);
+    transform: scale(1.05);
+}
+
+.info-envios .info-envio {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+
+.info-envios .info-envio img {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-envios .info-envio img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la sección "Nosotros" */
+.sobre-nosotros {
+    background-color: rgb(255, 186, 223);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.video-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-iframe {
+    width: 70%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+
+
+/*...........................................................................footer.........--------------------.................................................*/
+/*rgb(255, 25, 198)*/
+
+/* Estilos para el footer */
+footer {
+    background-color: rgb(199, 78, 255);
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', sans-serif; /* Aplicar fuente Roboto */
+}
+
+/* Contenedor del footer */
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Enlaces de redes sociales */
+footer .footer-container .social a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .footer-container .social a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para el mapa */
+footer .footer-container .mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: 0;
+    border-radius: 0.5rem; /* Redondear bordes */
+}
+
+/* Estilos para la sección de suscripción */
+footer .footer-container .suscripcion input[type="email"],
+footer .footer-container .suscripcion input[type="submit"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+footer .footer-container .suscripcion input[type="submit"] {
+    background-color: rgb(199, 78, 255);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .footer-container .suscripcion input[type="submit"]:hover {
+    background-color: rgb(247, 73, 195);
+}
+
+/* Estilos adicionales para las imágenes dentro del footer */
+footer img {
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el encabezado dentro del footer */
+footer h3 {
+    margin: 50px 0;
+    font-size: 2.9rem; /* Usa rem en lugar de em para consistencia */
+    text-decoration: underline;
+}
+
+footer b {
+    font-size: 1.5rem;
+}
+
+/* Estilos para los enlaces de redes sociales en lista */
+.social-links {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+/* Estilos para el mapa */
+.mapa {
+    text-align: center; /* Centrar contenido */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.mapa h3 {
+    margin: 10px 0; /* Margen arriba y abajo */
+}
+
+.mapa .ubicacion {
+    width: 100%; /* Ajustar ancho al 100% */
+    height: 300px; /* Establecer altura deseada */
+    margin-top: 10px; /* Espacio superior */
+    border-radius: 0.5rem; /* Redondear bordes */
+}
+
+/* Estilos para la sección de suscripción */
+.subscribete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.subscribete label {
+    margin-right: 10px;
+}
+
+.subscribete input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.subscribete button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 153, 58);
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Agregar transición para suavidad */
+}
+
+.subscribete button:hover {
+    background-color: #eee;
+    transform: scale(1.05); /* Agregar efecto hover */
+}
+
+
+
+/*............................................................................................................................... Media Queries----------------------------------*/
+
+
+/* Media queries para hacer el sitio responsive */
+@media screen and (min-width: 1200px) and (max-width: 1879px) {
+    .hero article {
+        height: 30rem; /* Ajusta la altura de cada artículo según sea necesario */
+    }
+
+    .hero article img {
+        max-width: 100%;
+        height: auto;
+        max-height: 20rem; /* Limita la altura máxima de las imágenes para controlar el tamaño */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para tabletas y dispositivos móviles */
+    .hero {
+        grid-template-columns: 1fr; /* Cambia a 1 columna para dispositivos móviles */
+        gap: 1rem; /* Reduce el espacio entre elementos */
+        padding: 1rem; /* Ajusta el padding general */
+    }
+
+    .hero article {
+        height: auto; /* Altura automática para ajustarse al contenido */
+    }
+
+    .hero article img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+
+    .info-envios .info-envio {
+        flex-direction: row ; /* Cambia a disposición de columna para los íconos de envío */
+        gap: 1rem; /* Añade espacio entre los íconos */
+    }
+
+    .info-envios .info-envio img {
+        max-width: 100px; /* Ajusta el ancho máximo de los íconos de envío */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .titulo-roma h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        top: auto;
+        position: static;
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+
+    main .destacados h2 {
+        font-size: 2rem;
+    }
+
+    .info-envios h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-envios p, .info-envios .centrar-enlace a {
+        font-size: 1rem;
+    }
+
+    .info-envios .info-envio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        gap: 1rem;
+    }
+
+    .info-envios .info-envio img {
+        max-width: 8rem;
+        flex: 1 1 48%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer .footer-container {
+        gap: 1rem;
+    }
+
+    footer .footer-container .social a {
+        font-size: 1rem;
+    }
+
+    footer .footer-container .mapa iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Estilos para centrar las imágenes en la sección de contacto */
+    .contacto .imagenes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+        gap: 1rem;
+        margin: 0; /* Asegura que no haya margen lateral */
+        padding: 0; /* Asegura que no haya padding lateral */
+    }
+
+    .contacto .imagenes-contacto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+/* Estilos para dispositivos móviles entre 449px */
+@media (max-width: 449px) {
+    /* Ajustes para el menú de navegación */
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+
+    /* Ajustes para la sección de Productos Destacados */
+    main .destacados h2 {
+        font-size: 1.8rem;
+        margin-top: 1rem; /* Agrega margen superior para separar del navbar */
+    }
+
+    main .destacados b {
+        font-size: 0.9rem;
+    }
+
+    /* Ajustes para la sección de información de envíos */
+    .info-envios .info-envio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .info-envios .info-envio img {
+        max-width: 100px;
+    }
+
+    .info-envios h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-envios p,
+    .info-envios .centrar-enlace a {
+        font-size: 0.9rem;
+    }
+}
