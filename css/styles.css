@@ -15,7 +15,9 @@ body {
     background-color: rgb(255, 186, 223);
     margin: 0;
     padding-top: 145px;
-    min-height: 100vh
+    /*display: flex;
+    flex-direction: column;
+    align-items: none; */
     
 }
 
@@ -93,10 +95,11 @@ nav {
 
 /* Estilos para la sección de Productos Destacados */
 main {
-    width: 100%;
+    min-width: 100%;
     /* Asegura que main ocupe el ancho completo */
     box-sizing: border-box;
     /* Importante para incluir el padding en el ancho total */
+
 }
 
 
@@ -331,7 +334,7 @@ footer {
     text-decoration: underline;
     padding: 2rem 1rem;
     font-family: 'Roboto', sans-serif;
-    /* Aplicar fuente Roboto */
+
 }
 
 /* Contenedor del footer */
@@ -679,6 +682,12 @@ footer b {
         padding: 0.5rem;
     }
 
+    main {
+        width: 120%;
+        
+        
+    }
+
     main .destacados h2 {
         font-size: 1.5rem; /* Ajuste del tamaño de fuente */
     }
@@ -711,6 +720,8 @@ footer b {
 
     footer {
         padding: 1rem;
+        width: 120%;
+        
     }
 
     footer .footer-container {
