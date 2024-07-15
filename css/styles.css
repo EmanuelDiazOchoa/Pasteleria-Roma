@@ -14,6 +14,7 @@ body {
     background-color: rgb(255, 186, 223);
     margin: 0;
     padding-top: 145px;
+    overflow-x: hidden;
 }
 
 /* Estilos para el header y su contenedor */
@@ -49,7 +50,8 @@ header {
 /* Estilos para el menú de navegación */
 nav {
     position: fixed;
-    top: 100px; /* Ajusta este valor según la altura de tu header */
+    top: 100px;
+    /* Ajusta este valor según la altura de tu header */
     left: 0;
     width: 100%;
     background-color: rgb(232, 56, 255);
@@ -89,14 +91,16 @@ nav {
 
 /* Estilos para la sección de Productos Destacados */
 main {
-    width: 100%; /* Asegura que main ocupe el ancho completo */
-    box-sizing: border-box; /* Importante para incluir el padding en el ancho total */
+    width: 100%;
+    /* Asegura que main ocupe el ancho completo */
+    box-sizing: border-box;
+    /* Importante para incluir el padding en el ancho total */
 }
 
 
 
 main .destacados {
-    
+
     text-align: center;
     background-color: rgb(255, 25, 198);
 }
@@ -180,7 +184,8 @@ main .destacados a:hover {
 
 .hero article .buttons {
     display: flex;
-    justify-content: space-around; /* Alinea los botones con espacio entre ellos */
+    justify-content: space-around;
+    /* Alinea los botones con espacio entre ellos */
     margin-top: 1rem;
 }
 
@@ -193,20 +198,25 @@ main .destacados a:hover {
     display: inline-block;
     border-radius: 0.5rem;
     transition: background-color 0.3s, color 0.3s;
-    border: none; /* Eliminar borde */
+    border: none;
+    /* Eliminar borde */
     cursor: pointer;
-    font-size: 1rem; /* Tamaño de fuente */
+    font-size: 1rem;
+    /* Tamaño de fuente */
 }
 
 .hero article .buttons a:hover {
     background-color: rgb(247, 73, 195);
     color: white;
-    transform: translateY(-2px); /* Efecto de levantamiento al pasar el mouse */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transform: translateY(-2px);
+    /* Efecto de levantamiento al pasar el mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
 }
 
-.hero article .buttons a + a {
-    margin-left: 1rem; /* Espacio entre botones */
+.hero article .buttons a+a {
+    margin-left: 1rem;
+    /* Espacio entre botones */
 }
 
 
@@ -318,7 +328,8 @@ footer {
     text-align: center;
     text-decoration: underline;
     padding: 2rem 1rem;
-    font-family: 'Roboto', sans-serif; /* Aplicar fuente Roboto */
+    font-family: 'Roboto', sans-serif;
+    /* Aplicar fuente Roboto */
 }
 
 /* Contenedor del footer */
@@ -346,7 +357,8 @@ footer .footer-container .mapa iframe {
     max-width: 600px;
     height: 300px;
     border: 0;
-    border-radius: 0.5rem; /* Redondear bordes */
+    border-radius: 0.5rem;
+    /* Redondear bordes */
 }
 
 /* Estilos para la sección de suscripción */
@@ -384,7 +396,8 @@ footer img:hover {
 /* Estilos para el encabezado dentro del footer */
 footer h3 {
     margin: 50px 0;
-    font-size: 2.9rem; /* Usa rem en lugar de em para consistencia */
+    font-size: 2.9rem;
+    /* Usa rem en lugar de em para consistencia */
     text-decoration: underline;
 }
 
@@ -395,7 +408,8 @@ footer b {
 /* Estilos para los enlaces de redes sociales en lista */
 .social-links {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
     align-items: center;
     list-style: none;
     padding: 0;
@@ -409,19 +423,26 @@ footer b {
 
 /* Estilos para el mapa */
 .mapa {
-    text-align: center; /* Centrar contenido */
-    margin-top: 20px; /* Espacio superior */
+    text-align: center;
+    /* Centrar contenido */
+    margin-top: 20px;
+    /* Espacio superior */
 }
 
 .mapa h3 {
-    margin: 10px 0; /* Margen arriba y abajo */
+    margin: 10px 0;
+    /* Margen arriba y abajo */
 }
 
 .mapa .ubicacion {
-    width: 100%; /* Ajustar ancho al 100% */
-    height: 300px; /* Establecer altura deseada */
-    margin-top: 10px; /* Espacio superior */
-    border-radius: 0.5rem; /* Redondear bordes */
+    width: 100%;
+    /* Ajustar ancho al 100% */
+    height: 300px;
+    /* Establecer altura deseada */
+    margin-top: 10px;
+    /* Espacio superior */
+    border-radius: 0.5rem;
+    /* Redondear bordes */
 }
 
 /* Estilos para la sección de suscripción */
@@ -454,12 +475,14 @@ footer b {
     background-color: rgb(255, 153, 58);
     color: #333;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Agregar transición para suavidad */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Agregar transición para suavidad */
 }
 
 .subscribete button:hover {
     background-color: #eee;
-    transform: scale(1.05); /* Agregar efecto hover */
+    transform: scale(1.05);
+    /* Agregar efecto hover */
 }
 
 
@@ -470,42 +493,55 @@ footer b {
 /* Media queries para hacer el sitio responsive */
 @media screen and (min-width: 1200px) and (max-width: 1879px) {
     .hero article {
-        height: 30rem; /* Ajusta la altura de cada artículo según sea necesario */
+        height: 30rem;
+        /* Ajusta la altura de cada artículo según sea necesario */
     }
 
     .hero article img {
         max-width: 100%;
         height: auto;
-        max-height: 20rem; /* Limita la altura máxima de las imágenes para controlar el tamaño */
+        max-height: 20rem;
+        /* Limita la altura máxima de las imágenes para controlar el tamaño */
     }
 }
 
 
 @media screen and (max-width: 768px) {
+
     /* Ajustes para tabletas y dispositivos móviles */
     .hero {
-        grid-template-columns: 1fr; /* Cambia a 1 columna para dispositivos móviles */
-        gap: 1rem; /* Reduce el espacio entre elementos */
-        padding: 1rem; /* Ajusta el padding general */
+        grid-template-columns: 1fr;
+        /* Cambia a 1 columna para dispositivos móviles */
+        gap: 1rem;
+        /* Reduce el espacio entre elementos */
+        padding: 1rem;
+        /* Ajusta el padding general */
     }
 
     .hero article {
-        height: auto; /* Altura automática para ajustarse al contenido */
+        height: auto;
+        /* Altura automática para ajustarse al contenido */
     }
 
     .hero article img {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-        height: auto; /* Altura automática para mantener la proporción */
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: auto;
+        /* Altura automática para mantener la proporción */
     }
 
     .info-envios .info-envio {
-        flex-direction: row ; /* Cambia a disposición de columna para los íconos de envío */
-        gap: 1rem; /* Añade espacio entre los íconos */
+        flex-direction: row;
+        /* Cambia a disposición de columna para los íconos de envío */
+        gap: 1rem;
+        /* Añade espacio entre los íconos */
     }
 
     .info-envios .info-envio img {
-        max-width: 100px; /* Ajusta el ancho máximo de los íconos de envío */
-        height: auto; /* Altura automática para mantener la proporción */
+        max-width: 100px;
+        /* Ajusta el ancho máximo de los íconos de envío */
+        height: auto;
+        /* Altura automática para mantener la proporción */
     }
 }
 
@@ -547,8 +583,111 @@ footer b {
         font-size: 1.5rem;
     }
 
-    .info-envios p, .info-envios .centrar-enlace a {
+    .info-envios p,
+    .info-envios .centrar-enlace a {
         font-size: 1rem;
+    }
+
+    .info-envios .info-envio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* Centra el contenido horizontalmente */
+        gap: 1rem;
+    }
+
+    .info-envios .info-envio img {
+        max-width: 8rem;
+        flex: 1 1 48%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer .footer-container {
+        gap: 1rem;
+    }
+
+    footer .footer-container .social a {
+        font-size: 1rem;
+    }
+
+    footer .footer-container .mapa iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Estilos para centrar las imágenes en la sección de contacto */
+    .contacto .imagenes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra el contenido horizontalmente */
+        gap: 1rem;
+        margin: 0;
+        /* Asegura que no haya margen lateral */
+        padding: 0;
+        /* Asegura que no haya padding lateral */
+    }
+
+    .contacto .imagenes-contacto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+/* Media query para pantallas de 450px a 350px */
+@media (max-width: 450px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .titulo-roma h1 {
+        font-size: 1.5rem; /* Ajuste del tamaño de fuente */
+    }
+
+    nav {
+        top: auto;
+        position: static;
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+
+    main .destacados h2 {
+        font-size: 1.5rem; /* Ajuste del tamaño de fuente */
+    }
+
+    .info-envios h2 {
+        font-size: 1.2rem; /* Ajuste del tamaño de fuente */
+    }
+
+    .info-envios p,
+    .info-envios .centrar-enlace a {
+        font-size: 0.9rem; /* Ajuste del tamaño de fuente */
     }
 
     .info-envios .info-envio {
@@ -559,7 +698,7 @@ footer b {
     }
 
     .info-envios .info-envio img {
-        max-width: 8rem;
+        max-width: 7rem; /* Ajuste del tamaño de imagen */
         flex: 1 1 48%;
     }
 
@@ -598,51 +737,5 @@ footer b {
     .contacto .imagenes-contacto img {
         max-width: 100%;
         height: auto;
-    }
-}
-
-
-
-
-/* Estilos para dispositivos móviles entre 449px */
-@media (max-width: 449px) {
-    /* Ajustes para el menú de navegación */
-    .navbar .container-fluid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar .navbar-nav .nav-link {
-        padding: 0.5rem;
-    }
-
-    /* Ajustes para la sección de Productos Destacados */
-    main .destacados h2 {
-        font-size: 1.8rem;
-        margin-top: 1rem; /* Agrega margen superior para separar del navbar */
-    }
-
-    main .destacados b {
-        font-size: 0.9rem;
-    }
-
-    /* Ajustes para la sección de información de envíos */
-    .info-envios .info-envio {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .info-envios .info-envio img {
-        max-width: 100px;
-    }
-
-    .info-envios h2 {
-        font-size: 1.5rem;
-    }
-
-    .info-envios p,
-    .info-envios .centrar-enlace a {
-        font-size: 0.9rem;
     }
 }
