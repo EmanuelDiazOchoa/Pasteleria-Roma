@@ -1,0 +1,4 @@
+@import url(./base/_generales.scss);
+@import url(../scss/components/_header.scss);
+@import url(../scss/components/_main.scss);
+@import url(../scss/components/_footer.scss);

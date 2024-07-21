@@ -1,0 +1,258 @@
+@media screen and (min-width: 1200px) and (max-width: 1879px) {
+    .hero article {
+        height: 30rem;
+        
+    }
+
+    .hero article img {
+        max-width: 100%;
+        height: auto;
+        max-height: 20rem;
+        
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+    .hero {
+        grid-template-columns: 1fr;
+        
+        gap: 1rem;
+
+        padding: 1rem;
+
+    }
+
+    .hero article {
+        height: auto;
+        
+    }
+
+    .hero article img {
+        width: 100%;
+        
+        height: auto;
+        
+    }
+
+    .info-envios .info-envio {
+        flex-direction: row;
+        
+        gap: 1rem;
+        
+    }
+
+    .info-envios .info-envio img {
+        max-width: 100px;
+
+        height: auto;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .titulo-roma h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        top: auto;
+        position: static;
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+
+    main .destacados h2 {
+        font-size: 2rem;
+    }
+
+    .info-envios h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-envios p,
+    .info-envios .centrar-enlace a {
+        font-size: 1rem;
+    }
+
+    .info-envios .info-envio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .info-envios .info-envio img {
+        max-width: 8rem;
+        flex: 1 1 48%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer .footer-container {
+        gap: 1rem;
+    }
+
+    footer .footer-container .social a {
+        font-size: 1rem;
+    }
+
+    footer .footer-container .mapa iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .contacto .imagenes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 1rem;
+        margin: 0;
+        
+        padding: 0;
+        
+    }
+
+    .contacto .imagenes-contacto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .titulo-roma h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        top: auto;
+        position: static;
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+
+    main {
+        width: 120%;
+
+
+    }
+
+    main .destacados h2 {
+        font-size: 1.5rem;
+        
+    }
+
+    .info-envios h2 {
+        font-size: 1.2rem;
+        
+    }
+
+    .info-envios p,
+    .info-envios .centrar-enlace a {
+        font-size: 0.9rem;
+        
+    }
+
+    .info-envios .info-envio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .info-envios .info-envio img {
+        max-width: 7rem;
+        flex: 1 1 48%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+        width: 120%;
+
+    }
+
+    footer .footer-container {
+        gap: 1rem;
+    }
+
+    footer .footer-container .social a {
+        font-size: 1rem;
+    }
+
+    footer .footer-container .mapa iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .contacto .imagenes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contacto .imagenes-contacto img {
+        max-width: 100%;
+        height: auto;
+    }
+}

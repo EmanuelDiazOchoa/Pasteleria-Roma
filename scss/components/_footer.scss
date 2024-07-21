@@ -1,0 +1,146 @@
+footer {
+    background-color: rgb(199, 78, 255);
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', sans-serif;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .social {
+            a {
+                color: white;
+                font-size: 1.5rem;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+
+        .mapa {
+            iframe {
+                width: 100%;
+                max-width: 600px;
+                height: 300px;
+                border: 0;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .suscripcion {
+            input[type="email"],
+            input[type="submit"] {
+                padding: 0.5rem;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                background-color: rgb(199, 78, 255);
+                color: white;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: rgb(247, 73, 195);
+                }
+            }
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 50px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    h3 {
+        margin: 50px 0;
+        font-size: 2.9rem;
+        text-decoration: underline;
+    }
+
+    b {
+        font-size: 1.5rem;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+
+    li {
+        display: inline;
+    }
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 20px;
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    .ubicacion {
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+        border-radius: 0.5rem;
+    }
+}
+
+.subscribete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+
+    label {
+        margin-right: 10px;
+    }
+
+    input[type="email"] {
+        padding: 5px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 5px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 153, 58);
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &:hover {
+            background-color: #eee;
+            transform: scale(1.05);
+        }
+    }
+}

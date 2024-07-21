@@ -15,10 +15,6 @@ body {
     background-color: rgb(255, 186, 223);
     margin: 0;
     padding-top: 145px;
-    /*display: flex;
-    flex-direction: column;
-    align-items: none; */
-    
 }
 
 /* Estilos para el header y su contenedor */
@@ -324,7 +320,6 @@ main .destacados a:hover {
 
 
 /*...........................................................................footer.........--------------------.................................................*/
-/*rgb(255, 25, 198)*/
 
 /* Estilos para el footer */
 footer {
@@ -660,7 +655,8 @@ footer b {
     }
 
     .titulo-roma h1 {
-        font-size: 1.5rem; /* Ajuste del tamaño de fuente */
+        font-size: 1.5rem;
+        /* Ajuste del tamaño de fuente */
     }
 
     nav {
@@ -684,32 +680,37 @@ footer b {
 
     main {
         width: 120%;
-        
-        
+
+
     }
 
     main .destacados h2 {
-        font-size: 1.5rem; /* Ajuste del tamaño de fuente */
+        font-size: 1.5rem;
+        /* Ajuste del tamaño de fuente */
     }
 
     .info-envios h2 {
-        font-size: 1.2rem; /* Ajuste del tamaño de fuente */
+        font-size: 1.2rem;
+        /* Ajuste del tamaño de fuente */
     }
 
     .info-envios p,
     .info-envios .centrar-enlace a {
-        font-size: 0.9rem; /* Ajuste del tamaño de fuente */
+        font-size: 0.9rem;
+        /* Ajuste del tamaño de fuente */
     }
 
     .info-envios .info-envio {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Centra el contenido horizontalmente */
+        justify-content: center;
+        /* Centra el contenido horizontalmente */
         gap: 1rem;
     }
 
     .info-envios .info-envio img {
-        max-width: 7rem; /* Ajuste del tamaño de imagen */
+        max-width: 7rem;
+        /* Ajuste del tamaño de imagen */
         flex: 1 1 48%;
     }
 
@@ -721,7 +722,7 @@ footer b {
     footer {
         padding: 1rem;
         width: 120%;
-        
+
     }
 
     footer .footer-container {
@@ -741,10 +742,13 @@ footer b {
     .contacto .imagenes-contacto {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra el contenido horizontalmente */
+        align-items: center;
+        /* Centra el contenido horizontalmente */
         gap: 1rem;
-        margin: 0; /* Asegura que no haya margen lateral */
-        padding: 0; /* Asegura que no haya padding lateral */
+        margin: 0;
+        /* Asegura que no haya margen lateral */
+        padding: 0;
+        /* Asegura que no haya padding lateral */
     }
 
     .contacto .imagenes-contacto img {
