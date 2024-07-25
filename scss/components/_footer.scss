@@ -1,6 +1,17 @@
+// Variables de colores
+$footer-bg-color: rgb(199, 78, 255); // Color de fondo del footer
+$footer-text-color: white; // Color del texto del footer
+$footer-hover-color: rgb(255, 255, 255); // Color al pasar el mouse sobre enlaces en el footer
+$button-bg-color: rgb(199, 78, 255); // Color de fondo de los botones en el footer
+$button-hover-bg-color: rgb(247, 73, 195); // Color de fondo de los botones al pasar el mouse
+$input-bg-color: #fff; // Color de fondo de los inputs
+$input-border-color: #ccc; // Color del borde de los inputs
+$button-subscribe-bg-color: rgb(255, 153, 58); // Color de fondo del botón de suscripción
+$button-subscribe-hover-bg-color: #eee; // Color de fondo del botón de suscripción al pasar el mouse
+
 footer {
-    background-color: rgb(199, 78, 255);
-    color: white;
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
     text-align: center;
     text-decoration: underline;
     padding: 2rem 1rem;
@@ -14,12 +25,12 @@ footer {
 
         .social {
             a {
-                color: white;
+                color: $footer-text-color;
                 font-size: 1.5rem;
                 transition: color 0.3s;
 
                 &:hover {
-                    color: rgb(255, 255, 255);
+                    color: $footer-hover-color;
                 }
             }
         }
@@ -35,112 +46,122 @@ footer {
         }
 
         .suscripcion {
-            input[type="email"],
-            input[type="submit"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+
+            input[type="email"] {
                 padding: 0.5rem;
-                border: none;
+                border: 1px solid $input-border-color;
                 border-radius: 0.5rem;
                 font-size: 1rem;
+                background-color: $input-bg-color;
             }
 
             input[type="submit"] {
-                background-color: rgb(199, 78, 255);
-                color: white;
+                background-color: $button-bg-color;
+                color: $footer-text-color;
                 cursor: pointer;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                font-size: 1rem;
                 transition: background-color 0.3s;
 
                 &:hover {
-                    background-color: rgb(247, 73, 195);
+                    background-color: $button-hover-bg-color;
                 }
             }
         }
-    }
 
-    img {
-        width: 50px;
-        height: 50px;
-        margin: 50px;
-        transition: transform 0.3s;
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 50px;
+            transition: transform 0.3s;
 
-        &:hover {
-            transform: scale(1.1);
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        h3 {
+            margin: 50px 0;
+            font-size: 2.9rem;
+            text-decoration: underline;
+        }
+
+        b {
+            font-size: 1.5rem;
         }
     }
 
-    h3 {
-        margin: 50px 0;
-        font-size: 2.9rem;
-        text-decoration: underline;
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 300px;
+
+        li {
+            display: inline;
+            margin: 0 0.5rem;
+        }
     }
 
-    b {
-        font-size: 1.5rem;
-    }
-}
+    .mapa {
+        text-align: center;
+        margin-top: 20px;
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 300px;
+        h3 {
+            margin: 10px 0;
+        }
 
-    li {
-        display: inline;
-    }
-}
-
-.mapa {
-    text-align: center;
-    margin-top: 20px;
-
-    h3 {
-        margin: 10px 0;
+        .ubicacion {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+            border-radius: 0.5rem;
+        }
     }
 
-    .ubicacion {
-        width: 100%;
-        height: 300px;
-        margin-top: 10px;
-        border-radius: 0.5rem;
-    }
-}
+    .subscribete {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        color: $footer-text-color;
+        text-align: center;
 
-.subscribete {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    color: white;
-    text-align: center;
+        label {
+            margin-right: 10px;
+        }
 
-    label {
-        margin-right: 10px;
-    }
+        input[type="email"] {
+            padding: 5px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid $input-border-color;
+        }
 
-    input[type="email"] {
-        padding: 5px;
-        margin-right: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
+        button {
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: $button-subscribe-bg-color;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
 
-    button {
-        padding: 5px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: rgb(255, 153, 58);
-        color: #333;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s;
-
-        &:hover {
-            background-color: #eee;
-            transform: scale(1.05);
+            &:hover {
+                background-color: $button-subscribe-hover-bg-color;
+                transform: scale(1.05);
+            }
         }
     }
 }

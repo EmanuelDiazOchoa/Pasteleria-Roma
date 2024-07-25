@@ -1,5 +1,5 @@
-@import url(./base/_generales.scss);
-@import url(../scss/components/_header.scss);
-@import url(../scss/components/_main.scss);
-@import url(../scss/components/_footer.scss);
-@import url(../scss/base/_mediaquerys.scss);
+@import "./base/generales";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+@import "./base/mediaquerys";

@@ -13,31 +13,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 186, 223);
     margin: 0;
-    padding-top: 145px;
+    padding-top: 145px; // Asegúrate de que esto coincida con la altura total del header y nav
 }
 
 
-header {
-    width: 100%;
-    background-color: rgb(241, 139, 255);
-    position: fixed;
-    top: 0;
-    height: 100px;
-    z-index: 1000;
-    margin: 0;
-    padding: 0;
-}
 
-main {
-    min-width: 100%;
-    box-sizing: border-box;
-}
 
-footer {
-    background-color: rgb(199, 78, 255);
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    padding: 2rem 1rem;
-
-}

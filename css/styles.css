@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*-------RESET--------*/
-* {
+/** {
     margin: 0;
     padding: 0;
     max-width: 150%;
@@ -9,7 +9,7 @@
 }
 
 /* Estilos generales */
-body {
+/*body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(255, 186, 223);
@@ -18,7 +18,7 @@ body {
 }
 
 /* Estilos para el header y su contenedor */
-header {
+/*header {
     width: 100%;
     background-color: rgb(241, 139, 255);
     position: fixed;
@@ -48,10 +48,9 @@ header {
 }
 
 /* Estilos para el menú de navegación */
-nav {
+/*nav {
     position: fixed;
     top: 100px;
-    /* Ajusta este valor según la altura de tu header */
     left: 0;
     width: 100%;
     background-color: rgb(232, 56, 255);
@@ -90,11 +89,10 @@ nav {
 }
 
 /* Estilos para la sección de Productos Destacados */
-main {
-    min-width: 100%;
-    /* Asegura que main ocupe el ancho completo */
+/*main {
+    min-width: 100%;    
     box-sizing: border-box;
-    /* Importante para incluir el padding en el ancho total */
+
 
 }
 
@@ -149,7 +147,7 @@ main .destacados a:hover {
 }
 
 /* Estilos para la sección de productos */
-.nuestros-productos {
+/*.nuestros-productos {
     background-color: rgb(255, 186, 223);
     text-decoration: underline;
     font-size: 1.5rem;
@@ -186,12 +184,11 @@ main .destacados a:hover {
 .hero article .buttons {
     display: flex;
     justify-content: space-around;
-    /* Alinea los botones con espacio entre ellos */
     margin-top: 1rem;
 }
 
 /* Estilos personalizados para los botones */
-.hero article .buttons a {
+/*.hero article .buttons a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(199, 78, 255);
@@ -200,24 +197,23 @@ main .destacados a:hover {
     border-radius: 0.5rem;
     transition: background-color 0.3s, color 0.3s;
     border: none;
-    /* Eliminar borde */
+    
     cursor: pointer;
     font-size: 1rem;
-    /* Tamaño de fuente */
+    
 }
 
 .hero article .buttons a:hover {
     background-color: rgb(247, 73, 195);
     color: white;
     transform: translateY(-2px);
-    /* Efecto de levantamiento al pasar el mouse */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
+    
 }
 
 .hero article .buttons a+a {
     margin-left: 1rem;
-    /* Espacio entre botones */
+    
 }
 
 
@@ -236,7 +232,7 @@ main .destacados a:hover {
 
 
 /* Estilos para la sección de información de envíos */
-.info-envios {
+/*.info-envios {
     padding: 2rem;
     background-color: rgb(53, 209, 118);
     text-align: center;
@@ -290,7 +286,7 @@ main .destacados a:hover {
 }
 
 /* Estilos para la sección "Nosotros" */
-.sobre-nosotros {
+/*.sobre-nosotros {
     background-color: rgb(255, 186, 223);
     margin-top: 50px;
     margin-bottom: 50px;
@@ -322,7 +318,7 @@ main .destacados a:hover {
 /*...........................................................................footer.........--------------------.................................................*/
 
 /* Estilos para el footer */
-footer {
+/*footer {
     background-color: rgb(199, 78, 255);
     color: white;
     text-align: center;
@@ -333,7 +329,7 @@ footer {
 }
 
 /* Contenedor del footer */
-footer .footer-container {
+/*footer .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,7 +337,7 @@ footer .footer-container {
 }
 
 /* Enlaces de redes sociales */
-footer .footer-container .social a {
+/*footer .footer-container .social a {
     color: white;
     font-size: 1.5rem;
     transition: color 0.3s;
@@ -352,17 +348,17 @@ footer .footer-container .social a:hover {
 }
 
 /* Estilos para el mapa */
-footer .footer-container .mapa iframe {
+/*footer .footer-container .mapa iframe {
     width: 100%;
     max-width: 600px;
     height: 300px;
     border: 0;
     border-radius: 0.5rem;
-    /* Redondear bordes */
+    
 }
 
 /* Estilos para la sección de suscripción */
-footer .footer-container .suscripcion input[type="email"],
+/*footer .footer-container .suscripcion input[type="email"],
 footer .footer-container .suscripcion input[type="submit"] {
     padding: 0.5rem;
     border: none;
@@ -382,7 +378,7 @@ footer .footer-container .suscripcion input[type="submit"]:hover {
 }
 
 /* Estilos adicionales para las imágenes dentro del footer */
-footer img {
+/*footer img {
     width: 50px;
     height: 50px;
     margin: 50px;
@@ -394,10 +390,9 @@ footer img:hover {
 }
 
 /* Estilos para el encabezado dentro del footer */
-footer h3 {
+/*footer h3 {
     margin: 50px 0;
     font-size: 2.9rem;
-    /* Usa rem en lugar de em para consistencia */
     text-decoration: underline;
 }
 
@@ -406,10 +401,9 @@ footer b {
 }
 
 /* Estilos para los enlaces de redes sociales en lista */
-.social-links {
+/*.social-links {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
     list-style: none;
     padding: 0;
@@ -422,31 +416,25 @@ footer b {
 }
 
 /* Estilos para el mapa */
-.mapa {
+/*.mapa {
     text-align: center;
-    /* Centrar contenido */
     margin-top: 20px;
-    /* Espacio superior */
 }
 
 .mapa h3 {
     margin: 10px 0;
-    /* Margen arriba y abajo */
+
 }
 
 .mapa .ubicacion {
     width: 100%;
-    /* Ajustar ancho al 100% */
     height: 300px;
-    /* Establecer altura deseada */
     margin-top: 10px;
-    /* Espacio superior */
     border-radius: 0.5rem;
-    /* Redondear bordes */
 }
 
 /* Estilos para la sección de suscripción */
-.subscribete {
+/*.subscribete {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,13 +464,11 @@ footer b {
     color: #333;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    /* Agregar transición para suavidad */
 }
 
 .subscribete button:hover {
     background-color: #eee;
     transform: scale(1.05);
-    /* Agregar efecto hover */
 }
 
 
@@ -491,57 +477,55 @@ footer b {
 
 
 /* Media queries para hacer el sitio responsive */
-@media screen and (min-width: 1200px) and (max-width: 1879px) {
+/*@media screen and (min-width: 1200px) and (max-width: 1879px) {
     .hero article {
         height: 30rem;
-        /* Ajusta la altura de cada artículo según sea necesario */
+        
     }
 
     .hero article img {
         max-width: 100%;
         height: auto;
         max-height: 20rem;
-        /* Limita la altura máxima de las imágenes para controlar el tamaño */
+
     }
 }
 
 
 @media screen and (max-width: 768px) {
 
-    /* Ajustes para tabletas y dispositivos móviles */
+    
     .hero {
         grid-template-columns: 1fr;
-        /* Cambia a 1 columna para dispositivos móviles */
+        
         gap: 1rem;
-        /* Reduce el espacio entre elementos */
+        
         padding: 1rem;
-        /* Ajusta el padding general */
+        
     }
 
     .hero article {
         height: auto;
-        /* Altura automática para ajustarse al contenido */
+        
     }
 
     .hero article img {
         width: 100%;
-        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        
         height: auto;
-        /* Altura automática para mantener la proporción */
     }
 
     .info-envios .info-envio {
         flex-direction: row;
-        /* Cambia a disposición de columna para los íconos de envío */
+        
         gap: 1rem;
-        /* Añade espacio entre los íconos */
+        
     }
 
     .info-envios .info-envio img {
         max-width: 100px;
-        /* Ajusta el ancho máximo de los íconos de envío */
+        
         height: auto;
-        /* Altura automática para mantener la proporción */
     }
 }
 
@@ -592,7 +576,6 @@ footer b {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* Centra el contenido horizontalmente */
         gap: 1rem;
     }
 
@@ -623,17 +606,15 @@ footer b {
         height: auto;
     }
 
-    /* Estilos para centrar las imágenes en la sección de contacto */
+    
     .contacto .imagenes-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra el contenido horizontalmente */
         gap: 1rem;
         margin: 0;
-        /* Asegura que no haya margen lateral */
         padding: 0;
-        /* Asegura que no haya padding lateral */
+
     }
 
     .contacto .imagenes-contacto img {
@@ -648,7 +629,7 @@ footer b {
 
 
 /* Media query para pantallas de 450px a 350px */
-@media (max-width: 450px) {
+/*@media (max-width: 450px) {
     header {
         height: auto;
         padding: 10px;
@@ -656,8 +637,8 @@ footer b {
 
     .titulo-roma h1 {
         font-size: 1.5rem;
-        /* Ajuste del tamaño de fuente */
-    }
+        
+}
 
     nav {
         top: auto;
@@ -686,31 +667,31 @@ footer b {
 
     main .destacados h2 {
         font-size: 1.5rem;
-        /* Ajuste del tamaño de fuente */
+        
     }
 
     .info-envios h2 {
         font-size: 1.2rem;
-        /* Ajuste del tamaño de fuente */
+        
     }
 
     .info-envios p,
     .info-envios .centrar-enlace a {
         font-size: 0.9rem;
-        /* Ajuste del tamaño de fuente */
+        
     }
 
     .info-envios .info-envio {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* Centra el contenido horizontalmente */
+        
         gap: 1rem;
     }
 
     .info-envios .info-envio img {
         max-width: 7rem;
-        /* Ajuste del tamaño de imagen */
+        
         flex: 1 1 48%;
     }
 
@@ -738,17 +719,17 @@ footer b {
         height: auto;
     }
 
-    /* Estilos para centrar las imágenes en la sección de contacto */
+    
     .contacto .imagenes-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centra el contenido horizontalmente */
+        
         gap: 1rem;
         margin: 0;
-        /* Asegura que no haya margen lateral */
+
         padding: 0;
-        /* Asegura que no haya padding lateral */
+        
     }
 
     .contacto .imagenes-contacto img {
