@@ -15,18 +15,33 @@ body {
 
 header {
   width: 100%;
-  background-color: #f18bff;
   position: fixed;
   top: 0;
-  height: 100px;
   z-index: 1000;
   margin: 0;
   padding: 0; }
+
+header .header-container .container, .navbar .container-fluid, footer .subscribete {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header .header-container .container {
+  padding: 20px; }
+
+header, .navbar, .navbar .container-fluid {
+  background-color: #f18bff; }
+
+nav {
+  background-color: #e838ff; }
+
+nav, main #carouselExampleIndicators .carousel-item img {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+header {
+  height: 100px; }
   header .header-container .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px; }
+    flex-direction: column; }
   header .titulo-roma {
     order: 1;
     width: 100%;
@@ -40,23 +55,17 @@ nav {
   top: 100px;
   left: 0;
   width: 100%;
-  background-color: #e838ff;
-  z-index: 900;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  z-index: 900; }
 
 .navbar {
   order: 2;
   width: 100%;
-  background-color: #f18bff;
   position: fixed;
   margin: 0;
   padding-top: 0;
   padding-bottom: 0; }
   .navbar .container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f18bff; }
+    justify-content: space-between; }
   .navbar .navbar-brand img {
     width: 50px; }
   .navbar .navbar-nav .nav-link {
@@ -64,33 +73,58 @@ nav {
     .navbar .navbar-nav .nav-link.active {
       color: #007bff; }
 
+main .destacados, main .nuestros-productos, main .hero article, main .info-envios, main .sobre-nosotros h2, main .video-container, footer, footer .mapa, footer .subscribete {
+  text-align: center; }
+
+main .destacados {
+  background-color: #ff19c6; }
+
+main .destacados b {
+  color: #0066cc; }
+
+main .nuestros-productos, main .hero, main .sobre-nosotros {
+  background-color: #ffbadf; }
+
+main .hero article .buttons a, main .info-envios .centrar-enlace a {
+  background-color: #c74eff; }
+
+main .info-envios {
+  background-color: #35d176; }
+
+nav, main #carouselExampleIndicators .carousel-item img {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+main .destacados a {
+  border-radius: 4px; }
+
+main .nuestros-productos, main .hero, main .hero article, main .sobre-nosotros {
+  padding: 1rem; }
+
+main .info-envios {
+  padding: 2rem; }
+
 main {
   min-width: 100%;
   box-sizing: border-box; }
-  main .destacados {
-    text-align: center;
-    background-color: #ff19c6; }
-    main .destacados h2 {
-      padding-top: 50px;
-      font-size: 2.5rem;
-      color: black; }
-    main .destacados b {
-      display: block;
-      margin: 20px 0;
-      font-size: 1.2rem;
-      color: #0066cc; }
-    main .destacados a {
-      display: inline-block;
-      margin: 10px;
-      padding: 8px 20px;
-      background-color: #ffcc00;
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-      transition: background-color 0.3s ease; }
-      main .destacados a:hover {
-        background-color: #e6b800; }
+  main .destacados h2 {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    color: black; }
+  main .destacados b {
+    display: block;
+    margin: 20px 0;
+    font-size: 1.2rem; }
+  main .destacados a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease; }
+    main .destacados a:hover {
+      background-color: #e6b800; }
   main #carouselExampleIndicators {
     max-width: 800px;
     margin: 0 auto; }
@@ -98,28 +132,20 @@ main {
       max-width: 100%;
       height: auto;
       margin-top: 20px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
       border-radius: 8px; }
   main .nuestros-productos {
-    background-color: #ffbadf;
     text-decoration: underline;
     font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem; }
   main .hero {
-    background-color: #ffbadf;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    padding: 1rem; }
+    margin-bottom: 2rem; }
     main .hero article {
       border: 0.2rem solid black;
-      text-align: center;
-      padding: 1rem;
       box-sizing: border-box;
       position: relative;
       overflow: hidden;
@@ -133,17 +159,17 @@ main {
         main .hero article .buttons a {
           text-decoration: none;
           color: #fff;
-          background-color: #c74eff;
           padding: 0.5rem 1rem;
           display: inline-block;
           border-radius: 0.5rem;
-          transition: background-color 0.3s, color 0.3s;
+          transition: background-color 0.3s ease;
           border: none;
           cursor: pointer;
-          font-size: 1rem; }
+          font-size: 1rem;
+          transition: transform 0.3s, color 0.3s; }
           main .hero article .buttons a:hover {
-            background-color: #f749c3;
-            color: white;
+            background-color: #f749c3; }
+          main .hero article .buttons a:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
           main .hero article .buttons a + a {
@@ -154,68 +180,69 @@ main {
         transition: transform 0.3s ease-in-out; }
         main .hero article img:hover {
           transform: scale(1.05); }
-  main .info-envios {
-    padding: 2rem;
-    background-color: #35d176;
-    text-align: center; }
-    main .info-envios h2 {
-      text-decoration: underline;
-      font-size: 2rem;
-      margin-bottom: 1rem; }
-    main .info-envios p {
+  main .info-envios h2 {
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  main .info-envios p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem; }
+  main .info-envios .centrar-enlace {
+    margin-bottom: 2rem; }
+    main .info-envios .centrar-enlace a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
       font-size: 1.2rem;
-      margin-bottom: 2rem; }
-    main .info-envios .centrar-enlace {
-      margin-bottom: 2rem; }
-      main .info-envios .centrar-enlace a {
-        text-decoration: none;
-        color: white;
-        background-color: #c74eff;
-        padding: 1rem 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.2rem;
-        transition: background-color 0.3s, transform 0.3s; }
-        main .info-envios .centrar-enlace a:hover {
-          background-color: #f749c3;
-          transform: scale(1.05); }
-    main .info-envios .info-envio {
-      display: flex;
-      justify-content: center;
-      gap: 20rem; }
-      main .info-envios .info-envio img {
-        width: 100%;
-        max-width: 10rem;
-        height: auto;
-        transition: transform 0.3s ease-in-out; }
-        main .info-envios .info-envio img:hover {
-          transform: scale(1.05); }
+      transition: background-color 0.3s ease;
+      transition: transform 0.3s ease-in-out; }
+      main .info-envios .centrar-enlace a:hover {
+        background-color: #f749c3; }
+      main .info-envios .centrar-enlace a:hover {
+        transform: scale(1.05); }
+  main .info-envios .info-envio {
+    display: flex;
+    justify-content: center;
+    gap: 20rem; }
+    main .info-envios .info-envio img {
+      width: 100%;
+      max-width: 10rem;
+      height: auto;
+      transition: transform 0.3s ease-in-out; }
+      main .info-envios .info-envio img:hover {
+        transform: scale(1.05); }
   main .sobre-nosotros {
-    background-color: #ffbadf;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px;
     text-align: justify; }
     main .sobre-nosotros h2 {
       font-size: 2.5rem;
       color: black;
-      text-align: center;
       margin-bottom: 30px;
       text-decoration: underline; }
   main .video-container {
-    margin-top: 50px;
-    text-align: center; }
+    margin-top: 50px; }
     main .video-container .video-iframe {
       width: 70%;
       height: 400px;
       margin-bottom: 50px; }
 
+header .header-container .container, .navbar .container-fluid, footer .subscribete {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .destacados, main .nuestros-productos, main .hero article, main .info-envios, main .sobre-nosotros h2, main .video-container, footer, footer .mapa, footer .subscribete {
+  text-align: center; }
+
+footer {
+  font-family: "Roboto", sans-serif; }
+
 footer {
   background-color: #c74eff;
   color: white;
-  text-align: center;
-  text-decoration: underline;
-  padding: 2rem 1rem;
-  font-family: 'Roboto', sans-serif; }
+  padding: 2rem 1rem; }
   footer h3 {
     margin: 50px 0;
     font-size: 2.9rem;
@@ -224,9 +251,10 @@ footer {
     font-size: 1.5rem; }
   footer .social-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: space-evenly;
     /* Distribuye el espacio de manera uniforme */
-    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -238,11 +266,10 @@ footer {
         max-width: 100px;
         max-height: 100px;
         object-fit: contain;
-        transition: transform 0.3s; }
+        transition: transform 0.3s ease; }
         footer .social-links li a img:hover {
           transform: scale(1.1); }
   footer .mapa {
-    text-align: center;
     margin-top: 20px; }
     footer .mapa h3 {
       margin: 10px 0; }
@@ -252,14 +279,9 @@ footer {
       margin-top: 10px;
       border-radius: 0.5rem; }
   footer .subscribete {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px 0;
-    color: white;
-    text-align: center; }
+    margin: 20px 0; }
     footer .subscribete label {
       margin-right: 10px; }
     footer .subscribete input[type="email"] {
@@ -268,13 +290,14 @@ footer {
       border-radius: 5px;
       border: 1px solid #ccc; }
     footer .subscribete button {
+      background-color: #ff993a;
+      color: #333;
       padding: 5px 20px;
       border: none;
       border-radius: 5px;
-      background-color: #ff993a;
-      color: #333;
       cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s; }
+      transition: background-color 0.3s ease;
+      transition: transform 0.3s ease; }
       footer .subscribete button:hover {
         background-color: #eee;
         transform: scale(1.05); }

@@ -5,24 +5,69 @@ $box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); // Sombra del nav
 $nav-link-color: #000; // Color de los enlaces del navbar
 $nav-link-active-color: #007bff; // Color de los enlaces activos del navbar
 
-// Header
-header {
+// Define mixins
+@mixin fixed-header {
     width: 100%;
-    background-color: $header-bg-color;
     position: fixed;
     top: 0;
-    height: 100px;
     z-index: 1000;
     margin: 0;
     padding: 0;
+}
 
-    .header-container {
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container-padding($padding) {
+    padding: $padding;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@mixin bg-color($color) {
+    background-color: $color;
+}
+
+// Common styles
+%fixed-header {
+    @include fixed-header;
+}
+
+%flex-center {
+    @include flex-center;
+}
+
+%container-padding-20 {
+    @include container-padding(20px);
+}
+
+%bg-header-color {
+    @include bg-color($header-bg-color);
+}
+
+%bg-nav-color {
+    @include bg-color($nav-bg-color);
+}
+
+%box-shadow {
+    @include box-shadow;
+}
+
+// Header
+header {
+    @extend %fixed-header;
+    @extend %bg-header-color;
+    height: 100px;
+
+    .header-container .container {
+        @extend %flex-center;
+        flex-direction: column;
+        @extend %container-padding-20;
     }
 
     .titulo-roma {
@@ -43,41 +88,36 @@ nav {
     top: 100px;
     left: 0;
     width: 100%;
-    background-color: $nav-bg-color;
+    @extend %bg-nav-color;
     z-index: 900;
-    box-shadow: $box-shadow;
+    @extend %box-shadow;
 }
 
 // Navbar
 .navbar {
     order: 2;
-    width: 100%;
-    background-color: $header-bg-color;
+    width: 100%; 
+    @extend %bg-header-color;
     position: fixed;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
 
     .container-fluid {
-        display: flex;
+        @extend %flex-center;
         justify-content: space-between;
-        align-items: center;
-        background-color: $header-bg-color;
+        @extend %bg-header-color;
     }
 
-    .navbar-brand {
-        img {
-            width: 50px;
-        }
+    .navbar-brand img {
+        width: 50px;
     }
 
-    .navbar-nav {
-        .nav-link {
-            color: $nav-link-color;
+    .navbar-nav .nav-link {
+        color: $nav-link-color;
 
-            &.active {
-                color: $nav-link-active-color;
-            }
+        &.active {
+            color: $nav-link-active-color;
         }
     }
 }

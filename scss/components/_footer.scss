@@ -9,16 +9,79 @@ $input-border-color: #ccc; // Color del borde de los inputs
 $button-subscribe-bg-color: rgb(255, 153, 58); // Color de fondo del botón de suscripción
 $button-subscribe-hover-bg-color: #eee; // Color de fondo del botón de suscripción al pasar el mouse
 
+// Define mixins
+@mixin bg-color($color) {
+    background-color: $color;
+}
 
+@mixin text-color($color) {
+    color: $color;
+}
 
+@mixin transition($property, $duration, $ease) {
+    transition: $property $duration $ease;
+}
 
-footer {
-    background-color: $footer-bg-color;
-    color: $footer-text-color;
+@mixin hover-scale($scale) {
+    &:hover {
+        transform: scale($scale);
+    }
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-center {
     text-align: center;
-    text-decoration: underline;
+}
+
+@mixin font-family($font...) {
+    font-family: $font;
+}
+
+@mixin button-style($bg-color, $hover-bg-color, $text-color: #333) {
+    @include bg-color($bg-color);
+    @include text-color($text-color);
+    padding: 5px 20px;
+    border: none;
+    @include border-radius(5px);
+    cursor: pointer;
+    @include transition(background-color, 0.3s, ease);
+    @include transition(transform, 0.3s, ease);
+
+    &:hover {
+        background-color: $hover-bg-color;
+        transform: scale(1.05);
+    }
+}
+
+// Common styles
+%flex-center {
+    @include flex-center;
+}
+
+%text-center {
+    @include text-center;
+}
+
+%font-roboto {
+    @include font-family('Roboto', sans-serif);
+}
+
+// Footer styles
+footer {
+    @include bg-color($footer-bg-color);
+    @include text-color($footer-text-color);
+    @extend %text-center;
     padding: 2rem 1rem;
-    font-family: 'Roboto', sans-serif;
+    @extend %font-roboto;
 
     h3 {
         margin: 50px 0;
@@ -31,9 +94,8 @@ footer {
     }
 
     .social-links {
-        display: flex;
+        @include flex-center;
         justify-content: space-evenly; /* Distribuye el espacio de manera uniforme */
-        align-items: center;
         list-style: none;
         padding: 0;
         margin: 0 auto;
@@ -48,18 +110,16 @@ footer {
                     max-width: 100px; 
                     max-height: 100px; 
                     object-fit: contain; 
-                    transition: transform 0.3s;
+                    @include transition(transform, 0.3s, ease);
 
-                    &:hover {
-                        transform: scale(1.1);
-                    }
+                    @include hover-scale(1.1);
                 }
             }
         }
     }
 
     .mapa {
-        text-align: center;
+        @extend %text-center;
         margin-top: 20px;
 
         h3 {
@@ -70,19 +130,16 @@ footer {
             width: 100%;
             height: 300px;
             margin-top: 10px;
-            border-radius: 0.5rem;
+            @include border-radius(0.5rem);
         }
     }
 
     .subscribete {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         padding: 20px;
-        border-radius: 10px;
+        @include border-radius(10px);
         margin: 20px 0;
-        color: $footer-text-color;
-        text-align: center;
+        @extend %text-center;
 
         label {
             margin-right: 10px;
@@ -91,23 +148,14 @@ footer {
         input[type="email"] {
             padding: 5px;
             margin-right: 10px;
-            border-radius: 5px;
+            @include border-radius(5px);
             border: 1px solid $input-border-color;
         }
 
         button {
-            padding: 5px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: $button-subscribe-bg-color;
-            color: #333;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-
-            &:hover {
-                background-color: $button-subscribe-hover-bg-color;
-                transform: scale(1.05);
-            }
+            @include button-style($button-subscribe-bg-color, $button-subscribe-hover-bg-color);
         }
     }
 }
+
+
