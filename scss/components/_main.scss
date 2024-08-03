@@ -143,6 +143,9 @@ main {
         @extend %container-padding-1;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        h2 {
+            font-size: 4rem; 
+        }
     }
 
     // Hero section
@@ -240,7 +243,7 @@ main {
         .info-envio {
             display: flex;
             justify-content: center;
-            gap: 20rem;
+            gap: 5rem;
 
             img {
                 width: 100%;

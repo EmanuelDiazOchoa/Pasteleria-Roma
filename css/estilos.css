@@ -138,6 +138,8 @@ main {
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem; }
+    main .nuestros-productos h2 {
+      font-size: 4rem; }
   main .hero {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -204,7 +206,7 @@ main {
   main .info-envios .info-envio {
     display: flex;
     justify-content: center;
-    gap: 20rem; }
+    gap: 5rem; }
     main .info-envios .info-envio img {
       width: 100%;
       max-width: 10rem;
