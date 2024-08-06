@@ -13,6 +13,14 @@ body {
   margin: 0;
   padding-top: 145px; }
 
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9); }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); } }
+
 header {
   width: 100%;
   position: fixed;
@@ -48,7 +56,8 @@ header {
     text-align: center;
     margin-bottom: 20px; }
     header .titulo-roma h1 {
-      font-size: 4.5rem; }
+      font-size: 4.5rem;
+      animation: fadeInSlideUp 1s ease-in-out forwards; }
 
 nav {
   position: fixed;
@@ -214,6 +223,8 @@ main {
       transition: transform 0.3s ease-in-out; }
       main .info-envios .info-envio img:hover {
         transform: scale(1.05); }
+      main .info-envios .info-envio img:hover {
+        transform: rotateZ(360deg); }
   main .sobre-nosotros {
     margin-top: 50px;
     margin-bottom: 50px;
