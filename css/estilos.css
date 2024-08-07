@@ -84,10 +84,6 @@ nav {
     color: #000; }
     .navbar .navbar-nav .nav-link.active {
       color: #007bff; }
-  .navbar .navbar-collapse {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row; }
   .navbar form.d-flex {
     margin-left: auto; }
 
@@ -339,7 +335,7 @@ footer {
   .navbar-toggler {
     display: block; }
   .navbar-collapse.show {
-    display: flex; } }
+    display: block; } }
 
 @media screen and (max-width: 768px) {
   .hero {
