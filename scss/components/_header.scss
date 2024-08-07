@@ -95,7 +95,7 @@ header {
 
         h1 {
             font-size: 4.5rem;
-            @include fade-in-slide-up(1s); // Aplica la animación con una duración de 1s
+            @include fade-in-slide-up(1s); 
         }
     }
 }
@@ -123,12 +123,17 @@ nav {
 
     .container-fluid {
         @extend %flex-center;
-        justify-content: space-between;
+        justify-content: space-between; 
         @extend %bg-header-color;
     }
 
     .navbar-brand img {
         width: 50px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-grow: 1; 
     }
 
     .navbar-nav .nav-link {
@@ -137,5 +142,15 @@ nav {
         &.active {
             color: $nav-link-active-color;
         }
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: row; // Asegura que los elementos estén en fila por defecto
+    }
+
+    form.d-flex {
+        margin-left: auto; 
     }
 }
