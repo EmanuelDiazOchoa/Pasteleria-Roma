@@ -249,3 +249,104 @@
         height: auto;
     }
 }
+
+
+    @media (max-width: 384px) and (min-width: 350px) {
+        header {
+            height: auto;
+            padding: 0.25rem;
+        }
+    
+        .titulo-roma h1 {
+            font-size: 0.875rem;
+            text-align: center;
+        }
+    
+        nav {
+            position: static;
+        }
+    
+        .navbar .container-fluid {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .navbar .navbar-nav {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .navbar .navbar-nav .nav-link {
+            padding: 0.25rem;
+            font-size: 0.9rem;
+        }
+    
+        main {
+            max-width: 100%;
+        }
+    
+        main .destacados h2 {
+            font-size: 2rem;
+            margin-bottom: 0,5rem;
+        }
+    
+        .info-envios h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        .info-envios p,
+        .info-envios .centrar-enlace a {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+    
+        .info-envios .info-envio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+    
+        .info-envios .info-envio img {
+            max-width: 8rem;
+            flex: 1 1 48%;
+        }
+    
+        .hero {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    
+        footer {
+            padding: 1rem;
+            text-align: center;
+        }
+    
+        footer .footer-container {
+            gap: 1rem;
+        }
+    
+        footer .footer-container .social a {
+            font-size: 1rem;
+        }
+    
+        footer .footer-container .mapa iframe {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .contacto .imagenes-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .contacto .imagenes-contacto img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
