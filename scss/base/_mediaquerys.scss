@@ -1,4 +1,5 @@
-@media screen and (min-width: 1200px) and (max-width: 1879px) {
+@media screen and (max-width: 1879px) {
+    
     .hero article {
         height: 30rem;
 
@@ -249,8 +250,23 @@
         text-align: center;
     }
 
+    footer h3 {
+        margin: 50px 0;
+        font-size: 3rem;
+        text-decoration: underline;
+
+    }
+
+    footer .mapa h4 {
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+
     footer .footer-container {
         gap: 1rem;
+    }
+    footer .social-links {
+        margin-top: 20px;
     }
 
     footer .footer-container .social a {
@@ -281,6 +297,7 @@
 
 
 @media (max-width: 385px) {
+    
     header {
         height: auto;
         padding: 0.25rem;
@@ -313,7 +330,7 @@
     }
 
     main {
-        max-width: 100%;
+        max-width: 100vh;
     }
 
     main .destacados {
@@ -349,7 +366,7 @@
     }
 
     .hero>* {
-        max-width: 100%; // Asegúrate de que los elementos hijos no excedan el contenedor
+        max-width: 100%; 
         box-sizing: border-box;
     }
 
