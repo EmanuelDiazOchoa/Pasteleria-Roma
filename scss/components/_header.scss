@@ -44,6 +44,7 @@ $nav-link-active-color: #007bff; // Color de los enlaces activos del navbar
         opacity: 0;
         transform: translateY(20px) scale(0.9);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -95,9 +96,13 @@ header {
 
         h1 {
             font-size: 4.5rem;
-            @include fade-in-slide-up(1s); 
+            @include fade-in-slide-up(1s);
         }
     }
+}
+
+main {
+    margin-top: 120px;
 }
 
 // Navigation
@@ -114,7 +119,7 @@ nav {
 // Navbar
 .navbar {
     order: 2;
-    width: 100%; 
+    width: 100%;
     @extend %bg-header-color;
     position: fixed;
     margin: 0;
@@ -123,7 +128,7 @@ nav {
 
     .container-fluid {
         @extend %flex-center;
-        justify-content: space-between; 
+        justify-content: space-between;
         @extend %bg-header-color;
     }
 
@@ -133,7 +138,7 @@ nav {
 
     .navbar-nav {
         display: flex;
-        flex-grow: 1; 
+        flex-grow: 1;
     }
 
     .navbar-nav .nav-link {
@@ -146,6 +151,6 @@ nav {
 
 
     form.d-flex {
-        margin-left: auto; 
+        margin-left: auto;
     }
 }

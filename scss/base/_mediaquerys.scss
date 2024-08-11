@@ -1,5 +1,5 @@
 @media screen and (max-width: 1879px) {
-    
+
     .hero article {
         height: 30rem;
 
@@ -9,67 +9,50 @@
         max-width: 100%;
         height: auto;
         max-height: 20rem;
-
     }
 }
 
-
-// Media Queries
 @media (max-width: 991px) {
     .navbar-collapse {
-        display: none; // Oculta el menú por defecto en pantallas pequeñas
+        display: none;
     }
 
     .navbar-toggler {
-        display: block; // Muestra el botón de menú en pantallas pequeñas
+        display: block;
     }
 
     .navbar-collapse.show {
-        display: block; // Muestra el menú cuando está abierto
+        display: block;
     }
 }
 
-
-
 @media screen and (max-width: 768px) {
-
 
     .hero {
         grid-template-columns: 1fr;
-
         gap: 1rem;
-
         padding: 1rem;
-
     }
 
     .hero article {
         height: auto;
-
     }
 
     .hero article img {
         width: 100%;
-
         height: auto;
-
     }
 
     .info-envios .info-envio {
         flex-direction: row;
-
         gap: 1rem;
-
     }
 
     .info-envios .info-envio img {
         max-width: 100px;
-
         height: auto;
-
     }
 }
-
 
 @media (max-width: 600px) {
     header {
@@ -244,7 +227,6 @@
         max-width: 7rem;
     }
 
-
     footer {
         padding: 1rem;
         text-align: center;
@@ -254,7 +236,6 @@
         margin: 50px 0;
         font-size: 3rem;
         text-decoration: underline;
-
     }
 
     footer .mapa h4 {
@@ -265,6 +246,7 @@
     footer .footer-container {
         gap: 1rem;
     }
+
     footer .social-links {
         margin-top: 20px;
     }
@@ -291,13 +273,10 @@
         max-width: 100%;
         height: auto;
     }
-
 }
 
-
-
 @media (max-width: 385px) {
-    
+
     header {
         height: auto;
         padding: 0.25rem;
@@ -339,7 +318,7 @@
 
     main .destacados h2 {
         font-size: 2rem;
-        margin-bottom: 0, 5rem;
+        margin-bottom: 0.5rem;
     }
 
     .info-envios h2 {
@@ -366,50 +345,90 @@
     }
 
     .hero>* {
-        max-width: 100%; 
+        max-width: 100%;
         box-sizing: border-box;
     }
 
     .hero article p {
         font-size: 0;
     }
+
+    footer {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    footer b {
+        font-size: 1rem;
+        
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1;
+        padding: 0.5rem 0;
+    }
+
+    footer .social-links a {
+        font-size: 0.875rem;
+    }
+
+    footer .mapa h4 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        
+    }
+
+    footer .mapa iframe {
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    footer .subscribete h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer .subscribete input[type="email"] {
+        padding: 0.15rem;
+        font-size: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        margin-bottom: 0.25rem;
+        
+    }
+
+    footer .subscribete input[type="submit"] {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    footer .subscribete input[type="submit"]:hover {
+        background-color: #555;
+    }
 }
 
 
-footer {
-    padding: 0, 5rem;
-    text-align: center;
-}
+@media (max-width: 367px) {
 
-footer b {
-    font-size: 1rem;
-}
-
-footer .footer-container {
-    gap: 0, 5rem;
-}
-
-
-
-footer .footer-container .social a {
-    font-size: 1rem;
-}
-
-footer .footer-container .mapa iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-.contacto .imagenes-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0, 5rem;
-    margin: 0;
-    padding: 0;
-}
-
-.contacto .imagenes-contacto img {
-    max-width: 100%;
-    height: auto;
+    main .info-envios .info-envio {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
