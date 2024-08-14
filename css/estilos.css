@@ -13,27 +13,34 @@ body {
 
 .foto-nosotros {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   margin: 0;
   background-image: url(../../img/pasteleros-nosotros.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  color: black;
+  color: #333;
   text-align: center;
-  padding: 0px;
+  padding: 0 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center; }
-  .foto-nosotros h2,
-  .foto-nosotros p {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .foto-nosotros h2, .foto-nosotros p {
     margin: 0;
-    padding: 10px;
-    background-color: white;
-    max-width: 90%; }
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+  .foto-nosotros h2 {
+    font-size: 2.5em;
+    font-weight: bold; }
+  .foto-nosotros p {
+    font-size: 1.2em; }
 
 .nuestros-envios {
   padding: 4rem 2rem;
