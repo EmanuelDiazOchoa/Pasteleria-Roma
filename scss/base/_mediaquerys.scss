@@ -217,6 +217,15 @@
         flex: 1 1 48%;
     }
 
+    main .hero {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+
+    }
+
     .hero {
         grid-template-columns: 1fr;
         gap: 1.5rem;
