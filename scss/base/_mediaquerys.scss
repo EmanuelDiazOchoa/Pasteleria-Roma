@@ -283,37 +283,32 @@
         height: auto;
     }
 
-    footer .subscribete {
-        padding: 10px;
-        border-radius: 5px;
-        margin: 10px 0;
-    }
-
-
     footer .subscribete input[type="email"] {
-        padding: 0.1rem;
-        font-size: 0.65rem;
+        padding: 0.1rem; /* Reduce el padding */
+        font-size: 0.6rem; /* Ajusta el tamaño de la fuente */
         border: 1px solid #ccc;
-        border-radius: 0.2rem;
-        margin-bottom: 0.2rem;
-
+        border-radius: 0.2rem; /* Reduce el border-radius */
+        margin-bottom: 0.1rem; /* Ajusta el margen inferior */
+        width: calc(100% - 0.4rem); /* Ajusta el ancho para evitar desbordamientos */
     }
 
     footer .subscribete input[type="submit"] {
-        padding: 0.2rem;
-        font-size: 0.65rem;
+        padding: 0.2rem; /* Reduce el padding */
+        font-size: 0.6rem; /* Ajusta el tamaño de la fuente */
         background-color: #333;
         color: #fff;
         border: none;
-        border-radius: 0.2rem;
+        border-radius: 0.2rem; /* Reduce el border-radius */
         cursor: pointer;
         transition: background-color 0.3s ease;
+        width: calc(100% - 0.4rem); /* Ajusta el ancho para evitar desbordamientos */
     }
 
     footer .subscribete input[type="submit"]:hover {
         background-color: #555;
     }
 }
+
 
 
 
