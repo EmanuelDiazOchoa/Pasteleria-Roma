@@ -366,17 +366,3 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
-// Adaptaciones responsive
-@media (max-width: 768px) {
-    .sobre-devoluciones {
-        padding: 20px;
-    }
-
-    .sobre-devoluciones h2 {
-        font-size: 1.5rem;
-    }
-
-    .devoluciones-imagenes {
-        grid-template-columns: 1fr;
-    }
-}
