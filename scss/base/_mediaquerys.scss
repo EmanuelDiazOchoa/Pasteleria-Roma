@@ -219,7 +219,7 @@
 
     main .hero {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         margin-top: 2.5rem;
         margin-bottom: 2rem;
@@ -282,7 +282,42 @@
         max-width: 100%;
         height: auto;
     }
+
+    footer .subscribete {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+
+    footer .subscribete input[type="email"] {
+        padding: 0.1rem;
+        font-size: 0.65rem;
+        border: 1px solid #ccc;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+
+    }
+
+    footer .subscribete input[type="submit"] {
+        padding: 0.2rem;
+        font-size: 0.65rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    footer .subscribete input[type="submit"]:hover {
+        background-color: #555;
+    }
 }
+
+
+
+
 
 @media (max-width: 385px) {
 
@@ -369,7 +404,7 @@
 
     footer b {
         font-size: 1rem;
-        
+
     }
 
     footer .footer-container {
@@ -393,7 +428,7 @@
     footer .mapa h4 {
         font-size: 1.5rem;
         margin: 0.5rem 0;
-        
+
     }
 
     footer .mapa iframe {
@@ -407,29 +442,7 @@
         margin-bottom: 0.5rem;
     }
 
-    footer .subscribete input[type="email"] {
-        padding: 0.15rem;
-        font-size: 0.75rem;
-        border: 1px solid #ccc;
-        border-radius: 0.25rem;
-        margin-bottom: 0.25rem;
-        
-    }
 
-    footer .subscribete input[type="submit"] {
-        padding: 0.25rem;
-        font-size: 0.75rem;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 0.25rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    footer .subscribete input[type="submit"]:hover {
-        background-color: #555;
-    }
 }
 
 
