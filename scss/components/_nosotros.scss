@@ -1,0 +1,55 @@
+// Variables
+$background-image: url(../../img/pasteleros-nosotros.webp);
+$white: #fff;
+$dark-gray: #333;
+$padding: 20px;
+$border-radius: 8px;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+// Estilos para .foto-nosotros
+// Variables SCSS
+$background-image: url('../../img/pasteleros-nosotros.webp');
+$dark-gray: #333;
+$white: #fff;
+$border-radius: 0.5rem;
+$padding: 1rem;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.foto-nosotros {
+    width: 100%;
+    margin: 0;
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: $dark-gray;
+    text-align: center;
+    padding: 0 $padding;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    // Estilos para h2 y p
+    h2,
+    p {
+        margin: 0;
+        padding: 15px $padding;
+        background-color: rgba($white, 0.8); // Fondo blanco con opacidad
+        border-radius: $border-radius;
+        max-width: 90%;
+        box-shadow: $shadow;
+    }
+
+    h2 {
+        font-size: 2.5em; // Tamaño grande para el título
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.2em; // Tamaño moderado para el párrafo
+    }
+}
