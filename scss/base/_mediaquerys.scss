@@ -1,8 +1,6 @@
 @media screen and (max-width: 1879px) {
-
     .hero article {
         height: 30rem;
-
     }
 
     .hero article img {
@@ -27,7 +25,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .hero {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -65,17 +62,136 @@
         grid-template-columns: 1fr;
     }
 
-    
-
     h2 {
-        font-size: 2em; 
+        font-size: 2em;
     }
 
     p {
-        font-size: 1em; 
+        font-size: 1em;
+    }
+
+    .nuestros-envios {
+        padding: 2rem 1rem;
+
+        .envios-intro {
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .envios-galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .envio-item {
+            height: 150px;
+        }
+    }
+
+    .foto-nosotros {
+        padding: 30px $padding;
+        flex-direction: column;
+
+        h2,
+        p {
+            max-width: 90%;
+            padding: 10px $padding;
+        }
+    }
+
+    .nosotros-roma {
+        margin: 20px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .contacto-seguro {
+        padding: 2rem 1rem;
+
+        .intro-text {
+            margin-bottom: 1rem;
+
+            h2 {
+                font-size: 2rem;
+                padding-bottom: 5px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+
+        .testimonios {
+            margin-bottom: 1.5rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            blockquote {
+                border-left: 3px solid $accent-color;
+                padding-left: 0.75rem;
+                margin: 0.75rem 0;
+            }
+        }
+
+        .conclusion {
+            margin-bottom: 1.5rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+
+                b {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .contacto-imagenes {
+            margin-top: 1rem;
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .col-md-6 {
+                width: 100%;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .contacto-galeria {
+        flex-direction: column; // Apilar imágenes verticalmente
+        align-items: center; // Centrar las imágenes horizontalmente
+        gap: 1rem; // Espacio entre las imágenes
+    }
+
+    .contacto-item {
+        max-width: 100%; // Ajustar el ancho para que ocupe todo el espacio disponible
+        height: auto; // Ajustar la altura según el contenido
     }
 }
-
 
 @media (max-width: 600px) {
     header {
@@ -172,32 +288,31 @@
         max-width: 100%;
         height: auto;
     }
+
     footer .subscribete input[type="email"] {
-        padding: 0.1rem; 
-        font-size: 0.6rem; 
+        padding: 0.1rem;
+        font-size: 0.6rem;
         border: 1px solid #ccc;
-        border-radius: 0.2rem; 
-        margin-bottom: 0.1rem; 
-        width: calc(100% - 0.4rem); 
+        border-radius: 0.2rem;
+        margin-bottom: 0.1rem;
+        width: calc(100% - 0.4rem);
     }
 
     footer .subscribete input[type="submit"] {
-        padding: 0.2rem; 
-        font-size: 0.6rem; 
+        padding: 0.2rem;
+        font-size: 0.6rem;
         background-color: #333;
         color: #fff;
         border: none;
-        border-radius: 0.2rem; 
+        border-radius: 0.2rem;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        width: calc(100% - 0.4rem); 
+        width: calc(100% - 0.4rem);
     }
 
     footer .subscribete input[type="submit"]:hover {
         background-color: #555;
     }
-
-
 }
 
 @media (max-width: 450px) {
@@ -272,7 +387,6 @@
         gap: 2rem;
         margin-top: 2.5rem;
         margin-bottom: 2rem;
-
     }
 
     .hero {
@@ -290,23 +404,8 @@
         text-align: center;
     }
 
-    footer h3 {
-        margin: 50px 0;
-        font-size: 3rem;
-        text-decoration: underline;
-    }
-
-    footer .mapa h4 {
-        margin: 10px 0;
-        font-size: 2rem;
-    }
-
     footer .footer-container {
         gap: 1rem;
-    }
-
-    footer .social-links {
-        margin-top: 20px;
     }
 
     footer .footer-container .social a {
@@ -332,149 +431,28 @@
         height: auto;
     }
 
-    
-
-}
-
-
-
-
-
-
-
-
-@media (max-width: 385px) {
-
-    header {
-        height: auto;
-        padding: 0.25rem;
+    footer .subscribete input[type="email"] {
+        padding: 0.1rem;
+        font-size: 0.6rem;
+        border: 1px solid #ccc;
+        border-radius: 0.2rem;
+        margin-bottom: 0.1rem;
+        width: calc(100% - 0.4rem);
     }
 
-    .titulo-roma h1 {
-        font-size: 0.875rem;
-        text-align: center;
-    }
-
-    nav {
-        max-height: 100%;
-        max-width: 100%;
-        position: static;
-    }
-
-    .navbar .container-fluid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar .navbar-nav .nav-link {
-        padding: 0.25rem;
-        font-size: 0.9rem;
-    }
-
-    main {
-        max-width: 100vh;
-    }
-
-    main .destacados {
-        height: 100%;
-    }
-
-    main .destacados h2 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .info-envios h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .info-envios p,
-    .info-envios .centrar-enlace a {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .info-envios .info-envio {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .info-envios .info-envio img {
-        max-width: 4rem;
-        flex: 1 1 48%;
-    }
-
-    .hero>* {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .hero article p {
-        font-size: 0;
-    }
-
-    footer {
-        padding: 0.5rem;
-        text-align: center;
-    }
-
-    footer b {
-        font-size: 1rem;
-
-    }
-
-    footer .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    footer .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 1;
-        padding: 0.5rem 0;
-    }
-
-    footer .social-links a {
-        font-size: 0.875rem;
-    }
-
-    footer .mapa h4 {
-        font-size: 1.5rem;
-        margin: 0.5rem 0;
-
-    }
-
-    footer .mapa iframe {
-        max-width: 100%;
-        height: auto;
+    footer .subscribete input[type="submit"] {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+        background-color: #333;
+        color: #fff;
         border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: calc(100% - 0.4rem);
     }
 
-    footer .subscribete h4 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-
-}
-
-
-@media (max-width: 367px) {
-
-    main .info-envios .info-envio {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+    footer .subscribete input[type="submit"]:hover {
+        background-color: #555;
     }
 }

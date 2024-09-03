@@ -1,55 +1,66 @@
-// Variables
-$background-image: url(../../img/pasteleros-nosotros.webp);
-$white: #fff;
+// Variables SCSS
+$white: #fff; 
+$light-beige: rgb(255, 239, 221); 
 $dark-gray: #333;
 $padding: 20px;
 $border-radius: 8px;
 $shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-// Estilos para .foto-nosotros
-// Variables SCSS
-$background-image: url('../../img/pasteleros-nosotros.webp');
-$dark-gray: #333;
-$white: #fff;
-$border-radius: 0.5rem;
-$padding: 1rem;
-$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// Estilos globales para el body
+body {
+    background-color: $light-beige; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
 
+// Estilos para .foto-nosotros
 .foto-nosotros {
     width: 100%;
     margin: 0;
-    background-image: $background-image;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: $dark-gray;
-    text-align: center;
-    padding: 0 $padding;
+    padding: 60px $padding; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    color: $dark-gray;
+    text-align: center;
 
     // Estilos para h2 y p
     h2,
     p {
-        margin: 0;
+        margin: 20px 0;
         padding: 15px $padding;
-        background-color: rgba($white, 0.8); // Fondo blanco con opacidad
+        background-color: $white; 
         border-radius: $border-radius;
-        max-width: 90%;
+        max-width: 80%;
         box-shadow: $shadow;
     }
 
     h2 {
-        font-size: 2.5em; // Tamaño grande para el título
+        font-size: 2.5em;
         font-weight: bold;
+        color: $dark-gray;
     }
 
     p {
-        font-size: 1.2em; // Tamaño moderado para el párrafo
+        font-size: 1.2em;
+        color: $dark-gray;
+        line-height: 1.6;
     }
+}
+
+// Estilos para .nosotros-roma
+.nosotros-roma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; 
+}
+
+.nosotros-roma img {
+    max-width: 100%; 
+    height: auto; 
 }
