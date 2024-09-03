@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
-  background-color: #ffbadf;
+  background-color: #ffefdd;
   margin: 0; }
 
 @keyframes fadeInSlideUp {
@@ -36,7 +36,7 @@ header .header-container .container {
   padding: 20px; }
 
 header, .navbar, .navbar .container-fluid {
-  background-color: #f18bff; }
+  background-color: #f7baff; }
 
 nav {
   background-color: #e838ff; }
@@ -92,19 +92,19 @@ main .destacados, main .nuestros-productos, main .hero article, main .info-envio
   text-align: center; }
 
 main .destacados {
-  background-color: #ff19c6; }
+  background-color: #ffefdd; }
 
 main .destacados b {
-  color: white; }
+  color: black; }
 
 main .nuestros-productos, main .hero, main .sobre-nosotros {
-  background-color: #ffbadf; }
+  background-color: #ffefdd; }
 
 main .hero article .buttons a, main .info-envios .centrar-enlace a {
   background-color: #c74eff; }
 
 main .info-envios {
-  background-color: #35d176; }
+  background-color: #ffefdd; }
 
 nav, main #carouselExampleIndicators .carousel-item img {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
@@ -259,8 +259,8 @@ footer {
   font-family: "Roboto", sans-serif; }
 
 footer {
-  background-color: #c74eff;
-  color: white;
+  background-color: #f7f7f7;
+  color: black;
   padding: 2rem 1rem; }
   footer h3 {
     margin: 50px 0;
@@ -355,7 +355,7 @@ footer {
 
 .nuestros-envios {
   padding: 4rem 2rem;
-  background: #ffbadf;
+  background: #ffefdd;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -441,7 +441,7 @@ footer {
 
 .nuestros-envios {
   padding: 4rem 2rem;
-  background: #ffbadf;
+  background: #fcd8eb;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
