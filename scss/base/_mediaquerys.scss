@@ -1,3 +1,4 @@
+// Estilos generales
 @media screen and (max-width: 1879px) {
     .hero article {
         height: 30rem;
@@ -191,6 +192,10 @@
         max-width: 100%; // Ajustar el ancho para que ocupe todo el espacio disponible
         height: auto; // Ajustar la altura según el contenido
     }
+
+    .sobre-devoluciones {
+        margin-top: 150px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -313,6 +318,25 @@
     footer .subscribete input[type="submit"]:hover {
         background-color: #555;
     }
+
+    .contacto-seguro {
+        margin-top: 60px;
+    }
+
+    .foto-nosotros {
+        margin-top: 60px;
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+
+    .nuestros-envios {
+        padding: 2rem 1rem;
+        margin-top: 60px;
+    }
+
+    .sobre-devoluciones {
+        margin-top: 210px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -383,20 +407,9 @@
 
     main .hero {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        margin-top: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    main .info-envios .info-envio img {
-        width: 100%;
-        max-width: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
     }
 
     footer {
@@ -432,17 +445,17 @@
     }
 
     footer .subscribete input[type="email"] {
-        padding: 0.1rem;
-        font-size: 0.6rem;
+        padding: 0.25rem;
+        font-size: 0.5rem;
         border: 1px solid #ccc;
         border-radius: 0.2rem;
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.25rem;
         width: calc(100% - 0.4rem);
     }
 
     footer .subscribete input[type="submit"] {
-        padding: 0.2rem;
-        font-size: 0.6rem;
+        padding: 0.25rem;
+        font-size: 0.5rem;
         background-color: #333;
         color: #fff;
         border: none;
@@ -454,5 +467,30 @@
 
     footer .subscribete input[type="submit"]:hover {
         background-color: #555;
+    }
+
+    .contacto-seguro {
+        margin-top: 40px;
+    }
+
+    .foto-nosotros {
+        margin-top: 40px;
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .nuestros-envios {
+        padding: 1rem;
+        margin-top: 40px;
+    }
+
+    
+
+    .sobre-devoluciones {
+        margin-top: 200px;
+    }
+
+    .nuestros-envios {
+        margin-top: 80px;
     }
 }
