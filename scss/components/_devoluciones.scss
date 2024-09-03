@@ -1,8 +1,5 @@
-//devoluciones
-
-
 // Variables
-$primary-color: #ffc107; 
+$primary-color: rgb(5, 5, 5); 
 $secondary-color: #343a40; 
 $background-color: #f8f9fa;
 $section-background: #ffffff;
@@ -60,7 +57,7 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     // Contenedor de imágenes
     .devoluciones-imagenes {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         justify-content: center;
 

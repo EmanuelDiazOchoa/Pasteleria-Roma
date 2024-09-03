@@ -600,11 +600,11 @@ body {
   max-width: 1200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
   .sobre-devoluciones h2 {
-    color: #ffc107;
+    color: #050505;
     margin-bottom: 30px;
     font-size: 2rem;
     text-align: center;
-    border-bottom: 2px solid #ffc107;
+    border-bottom: 2px solid #050505;
     padding-bottom: 10px;
     position: relative; }
     .sobre-devoluciones h2::after {
@@ -615,7 +615,7 @@ body {
       transform: translateX(-50%);
       width: 60px;
       height: 5px;
-      background: #ffc107;
+      background: #050505;
       border-radius: 5px; }
   .sobre-devoluciones p {
     color: #212529;
@@ -625,7 +625,7 @@ body {
       margin: 10px 0; }
   .sobre-devoluciones .devoluciones-imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center; }
     .sobre-devoluciones .devoluciones-imagenes .imagen-tarjeta {
